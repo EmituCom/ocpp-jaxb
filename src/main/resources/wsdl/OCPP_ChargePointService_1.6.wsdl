@@ -397,7 +397,7 @@ This document is made available under the Creative Commons Attribution-NoDerivat
           <s:documentation>Defines the RemoteStopTransaction.req PDU</s:documentation>
         </s:annotation>
         <s:sequence>
-          <s:element name="transactionId" type="s:int" minOccurs="1" maxOccurs="1" />
+          <s:element name="transactionId" type="s:long" minOccurs="1" maxOccurs="1" />
         </s:sequence>
       </s:complexType>
 
@@ -661,7 +661,7 @@ This document is made available under the Creative Commons Attribution-NoDerivat
 	  <s:complexType name="ChargingProfile">
         <s:sequence>
           <s:element name="chargingProfileId" type="s:int" minOccurs="1" maxOccurs="1" />
-          <s:element name="transactionId" type="s:int" minOccurs="0" maxOccurs="1" />
+          <s:element name="transactionId" type="s:long" minOccurs="0" maxOccurs="1" />
           <s:element name="stackLevel" type="s:int" minOccurs="1" maxOccurs="1" />
           <s:element name="chargingProfilePurpose" type="tns:ChargingProfilePurposeType" minOccurs="1" maxOccurs="1"/>
           <s:element name="chargingProfileKind" type="tns:ChargingProfileKindType" minOccurs="1" maxOccurs="1"/>

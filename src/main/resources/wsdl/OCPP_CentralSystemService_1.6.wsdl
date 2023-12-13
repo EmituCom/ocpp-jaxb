@@ -146,7 +146,7 @@ This document is made available under the Creative Commons Attribution-NoDerivat
 					<s:documentation>Defines the StartTransaction.conf PDU</s:documentation>
 				</s:annotation>
 				<s:sequence>
-					<s:element name="transactionId" type="s:int" minOccurs="1" maxOccurs="1"/>
+					<s:element name="transactionId" type="s:long" minOccurs="1" maxOccurs="1"/>
 					<s:element name="idTagInfo" type="tns:IdTagInfo" minOccurs="1" maxOccurs="1"/>
 				</s:sequence>
 			</s:complexType>
@@ -175,7 +175,7 @@ This document is made available under the Creative Commons Attribution-NoDerivat
 					<s:documentation>Defines the StopTransaction.req PDU</s:documentation>
 				</s:annotation>
 				<s:sequence>
-					<s:element name="transactionId" type="s:int" minOccurs="1" maxOccurs="1"/>
+					<s:element name="transactionId" type="s:long" minOccurs="1" maxOccurs="1"/>
 					<s:element name="idTag" type="tns:IdToken" minOccurs="0" maxOccurs="1"/>
 					<s:element name="timestamp" type="s:dateTime" minOccurs="1" maxOccurs="1"/>
 					<s:element name="meterStop" type="s:int" minOccurs="1" maxOccurs="1"/>
@@ -332,7 +332,7 @@ This document is made available under the Creative Commons Attribution-NoDerivat
 				</s:annotation>
 				<s:sequence>
 					<s:element name="connectorId" type="s:int" minOccurs="1" maxOccurs="1"/>
-					<s:element name="transactionId" type="s:int" minOccurs="0" maxOccurs="1"/>
+					<s:element name="transactionId" type="s:long" minOccurs="0" maxOccurs="1"/>
 					<s:element name="meterValue" type="tns:MeterValue" minOccurs="0" maxOccurs="unbounded"/>
 				</s:sequence>
 			</s:complexType>
