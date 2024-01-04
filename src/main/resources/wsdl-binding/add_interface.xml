@@ -23,7 +23,7 @@
         </jaxb:bindings>
 
         <!-- select all enumerations -->
-        <jaxb:bindings node="xs:simpleType[@name][child::cs:restriction/xs:enumeration]">
+        <jaxb:bindings node="xs:simpleType[substring(@name, string-length(@name) - string-length('Enum') + 1] = 'Enum'">
             <inheritance:implements>de.rwth.idsg.ocpp.jaxb.EnumType</inheritance:implements>
         </jaxb:bindings>
 
