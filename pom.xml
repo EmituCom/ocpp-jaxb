@@ -136,6 +136,10 @@
                                     <value>"javaInterfaces" : ["de.rwth.idsg.ocpp.jaxb.RequestType"],
   "definitions"</value>
                                 </replacement>
+                                <replacement>
+                                    <token>("javaType": "\w+Enum",)</token>
+                                    <value>$1 "javaInterfaces": ["de.rwth.idsg.ocpp.jaxb.EnumType"],</value>
+                                </replacement>
                             </replacements>
                         </configuration>
                     </execution>
@@ -154,6 +158,10 @@
                                     <token>"definitions"</token>
                                     <value>"javaInterfaces" : ["de.rwth.idsg.ocpp.jaxb.ResponseType"],
   "definitions"</value>
+                                </replacement>
+                                <replacement>
+                                    <token>("javaType": "\w+Enum",)</token>
+                                    <value>$1 "javaInterfaces": ["de.rwth.idsg.ocpp.jaxb.EnumType"],</value>
                                 </replacement>
                             </replacements>
                         </configuration>
