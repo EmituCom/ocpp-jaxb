@@ -7,4 +7,5 @@ package de.rwth.idsg.ocpp.jaxb;
  * @since 04.12.2024
  */
 public interface EnumType {
+    String value();
 }
