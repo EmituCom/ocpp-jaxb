@@ -34,7 +34,7 @@ Then, add the following to your pom.xml (use any version from [github tags page]
 
  ```
 <dependency>
-    <groupId>com.github.zyr00</groupId>
+    <groupId>com.github.EmituCom</groupId>
     <artifactId>ocpp-jaxb</artifactId>
     <version>${ocpp-jaxb.version}</version>
 </dependency>
